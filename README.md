@@ -1,2 +1,2 @@
 # ua
-Podatkovna baza za Ugankarski Asistent (https://ugankarskiasistent.ga)
+Podatkovna baza za Ugankarski Asistent (https://ugankarskiasistent.ga) v SQLITE v3 formatu.

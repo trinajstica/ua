@@ -6,3 +6,21 @@ Podatkovna baza za Ugankarski Asistent (https://ugankarskiasistent.ga) v SQLITE 
 Izvorno kodo (datoteka <a href="ua4-os.livecode">ua4-os.livecode</a>) odprete z LiveCode Community, kliknete na "Browse tool", aplikacija je pripravljena za delo. V kolikor dodate tudi <a href="database.db">database.db</a> datoteko ob izvorni kodi, boste lahko tudi iskali po bazi vseh gesel in opisov.
 
 Za učenje programiranja v LiveCode je priporočljivo, da si ogledate vse spletne strani na https://livecode.com ali nabavite kakšno knjigo, priporočam knjigo <a href="http://www3.economy-x-talk.com/file.php?node=programming-livecode-for-the-real-beginner&fbclid=IwAR3ECEBve8CO_SVNwr7mN-GpGPo567owqUIpFv83qhiiyBacu7ENsEN9Qow">Programming LiveCode for the Real Beginner</a>, avtor Mark Schonewille.
+
+Kako deluje:
+
+1) aplikacija omogoča iskanje, dodajanje novih, urejanje obstoječih in brisanje gesel in opisov
+2) iskanje poteka tako, da vpišemo v iskalno vrstico zaporedje znakov za gesla (primer: "REŠETO"), lahko uporabimo znak za piko "." za vse neznane črke v geslu, v kolikor želimo zožiti zadetke pa lahko dodamo ob geslu tudi delni opis gesla, ločen s presledkom (primer: "REŠETO SITO")
+3) iskanje lahko izvedemo tudi samo po opisu, zato vpišemo v iskalno vrstico delni opis, uporabimo tudi presledek (primer: " SITO"), ki ločuje geslo od opisa
+
+Izvršne datoteke:
+
+LiveCode Community omogoča prevajanje izvorne kode (z določenimi nastavitvami), za uporabnike, ki niso vešči prevajanja izvršne kode so že pripravljene izvršne datoteke v naslednjih arhivih:
+
+Windows verzja: <a href="https://ugankarskiasistent.ga/prenos/ua64-windows.zip">prenos 64</a> bit ali <a href="https://ugankarskiasistent.ga/prenos/ua32-windows.zip">prenos</a> 32 bit
+
+Linux verzija: <a href="https://ugankarskiasistent.ga/prenos/ua64-linux.zip">prenos</a> 64 bit
+
+Mac OS X verzija: <a href="https://ugankarskiasistent.ga/prenos/ua64-macosx.zip">prenos</a> 64 bit
+
+Android od verzije 5 naprej: <a href="https://play.google.com/store/apps/details?id=com.preprosto.ua3">Google Play trgovina</a> (armv7, arm64, x86 in x86_64)

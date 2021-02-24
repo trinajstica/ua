@@ -1,4 +1,4 @@
-# Ugankarski Asistent
+# Ugankarski Asistent - izdelano v <a href="https://livecode.org">LiveCode Community</a>
 Podatkovna baza za Ugankarski Asistent (https://ugankarskiasistent.ga) v SQLITE v3 formatu in izvorna koda v LiveCode (https://livecode.org) programskem jeziku.
 
 <a href="LICENSE">LICENCA</a>

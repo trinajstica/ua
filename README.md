@@ -11,11 +11,11 @@ Za učenje programiranja v LiveCode je priporočljivo, da si ogledate vse spletn
 
 Kako deluje:
 
-1) Aplikacija omogoča iskanje, dodajanje novih, urejanje obstoječih in brisanje gesel in opisov.
-2) Iskanje poteka tako, da vpišemo v iskalno vrstico zaporedje znakov za gesla (primer: "REŠETO"), lahko uporabimo znak za piko "." za vse neznane črke v geslu, v kolikor želimo zožiti zadetke pa lahko dodamo ob geslu tudi delni opis gesla, ločen s presledkom (primer: "REŠETO SITO").
-3) Iskanje lahko izvedemo tudi samo po opisu, zato vpišemo v iskalno vrstico delni opis, uporabimo tudi presledek (primer: " SITO"), ki ločuje geslo od opisa.
-4) Kako deluje zbiranje gesel in opisov uporabnikov? Aplikacija deluje v navezi s poštnim strežnikom, preko katerega uporabniki pošiljajo svoja urejanja gesel in opisov. Na epoštni naslov prejmem sporočilo (anonimno) v formatu, ki ga lahko (z nekaj popravki) s pomočjo internega programa vnesem v MYSQL bazo na strežniku, ki služi kot podlaga za spletno iskanje na naslovu https://ugankarskiasistent.ga/iskanje.html, nato iste podatke shranim v datoteko na strežniku, ki jo ob sprožitvi posodobitve baze s strani uporabnika, program prebere in vnese neobstoječe zapise, popravke v lokalno bazo uporabnika, tako postanejo vsi popravki dostopni vsem uporabnikom programa.
-5) vsaka verzija ima svojo lastno datoteko s spremembami, ki se dopolnjuje vsakič, ko se prejme popravke s strani anonimnega uporabnika.
+* Aplikacija omogoča iskanje, dodajanje novih, urejanje obstoječih in brisanje gesel in opisov.
+* Iskanje poteka tako, da vpišemo v iskalno vrstico zaporedje znakov za gesla (primer: "REŠETO"), lahko uporabimo znak za piko "." za vse neznane črke v geslu, v kolikor želimo zožiti zadetke pa lahko dodamo ob geslu tudi delni opis gesla, ločen s presledkom (primer: "REŠETO SITO").
+* Iskanje lahko izvedemo tudi samo po opisu, zato vpišemo v iskalno vrstico delni opis, uporabimo tudi presledek (primer: " SITO"), ki ločuje geslo od opisa.
+* Kako deluje zbiranje gesel in opisov uporabnikov? Aplikacija deluje v navezi s poštnim strežnikom, preko katerega uporabniki pošiljajo svoja urejanja gesel in opisov. Na epoštni naslov prejmem sporočilo (anonimno) v formatu, ki ga lahko (z nekaj popravki) s pomočjo internega programa vnesem v MYSQL bazo na strežniku, ki služi kot podlaga za spletno iskanje na naslovu https://ugankarskiasistent.ga/iskanje.html, nato iste podatke shranim v datoteko na strežniku, ki jo ob sprožitvi posodobitve baze s strani uporabnika, program prebere in vnese neobstoječe zapise, popravke v lokalno bazo uporabnika, tako postanejo vsi popravki dostopni vsem uporabnikom programa.
+* Vsaka verzija ima svojo lastno datoteko s spremembami, ki se dopolnjuje vsakič, ko se prejme popravke s strani anonimnega uporabnika.
 
 Izvršne datoteke:
 

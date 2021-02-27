@@ -5,7 +5,7 @@ Podatkovna baza za Ugankarski Asistent (https://ugankarskiasistent.ga) v SQLITE 
 
 <a href="LICENSE">LICENCA</a>
 
-Izvorno kodo (datoteka <a href="ua4-os.livecode">ua4-os.livecode</a>) odprete z LiveCode Community, kliknete na "Browse tool", aplikacija je pripravljena za delo. V kolikor dodate tudi <a href="database.db">database.db</a> datoteko ob izvorni kodi, boste lahko tudi iskali po bazi vseh gesel in opisov.
+Izvorno kodo (datoteka <a href="ua4-os.livecode">ua4-os.livecode</a>) odprete z LiveCode Community, kliknete na "Browse tool", aplikacija je pripravljena za delo. V kolikor dodate tudi <a href="database.db">database.db</a> datoteko ob izvorni kodi, boste lahko tudi iskali po bazi vseh gesel in opisov. Če želite začeti z lastno kreacijo baze, potem preimenujte database-prazna.db v database.db, brez tega program ne bo deloval pravilno.
 
 Za učenje programiranja v LiveCode je priporočljivo, da si ogledate vse spletne strani na https://livecode.com ali nabavite kakšno knjigo, priporočam knjigo <a href="http://www3.economy-x-talk.com/file.php?node=programming-livecode-for-the-real-beginner&fbclid=IwAR3ECEBve8CO_SVNwr7mN-GpGPo567owqUIpFv83qhiiyBacu7ENsEN9Qow">Programming LiveCode for the Real Beginner</a>, avtor Mark Schonewille.
 

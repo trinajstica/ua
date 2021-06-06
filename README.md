@@ -29,6 +29,6 @@ Mac OS X verzija: <a href="https://ugankarskiasistent.ga/prenos/ua64-macosx.zip"
 
 Android od verzije 5 naprej: <a href="https://play.google.com/store/apps/details?id=com.preprosto.ua3">Google Play trgovina</a> (armv7, arm64, x86 in x86_64)
 
-<a href="https://ugankarskiasistent.ga/#donacija">Donirajte</a> za razvoj v EUR, BTC ali ETH.
+<a href="https://ugankarskiasistent.ga/#donacija">Donirajte</a> za razvoj.
 
 Obiščete lahko tudi <a href="https://ugankarskiasistent.ga/iskanje.html">on-line</a> različico.

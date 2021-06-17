@@ -21,7 +21,7 @@ Izvršne datoteke:
 
 LiveCode Community omogoča prevajanje izvorne kode (z določenimi nastavitvami), za uporabnike, ki niso vešči prevajanja izvršne kode so že pripravljene izvršne datoteke v naslednjih arhivih:
 
-Windows verzja: <a href="https://ugankarskiasistent.ga/prenos/ua64-windows.zip">prenos 64</a> bit ali <a href="https://ugankarskiasistent.ga/prenos/ua32-windows.zip">prenos</a> 32 bit
+Windows verzja: <a href="https://ugankarskiasistent.ga/prenos/ua64-windows.zip">prenos</a> 64 bit ali <a href="https://ugankarskiasistent.ga/prenos/ua32-windows.zip">prenos</a> 32 bit
 
 Linux verzija: <a href="https://ugankarskiasistent.ga/prenos/ua64-linux.zip">prenos</a> 64 bit
 

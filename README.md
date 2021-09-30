@@ -30,3 +30,5 @@ Android od verzije 5 naprej: <a href="https://play.google.com/store/apps/details
 <a href="https://ugankarskiasistent.ga/#donacija">Donirajte</a> za razvoj.
 
 Obiščete lahko tudi <a href="https://ugankarskiasistent.ga/iskanje.html">on-line</a> različico.
+
+Več informacij o jeziku OpenXTalk lahko dobite na uradnem <a href="https://forums.openxtalk.org/">forumu</a>.

@@ -25,3 +25,5 @@ Mac OS X verzija: <a href="https://github.com/trinajstica/ua/raw/master/bin/ua64
 Android od verzije 5 naprej: <a href="https://play.google.com/store/apps/details?id=com.preprosto.ua3">Google Play trgovina</a> (armv7, arm64, x86 in x86_64)
 
 Več informacij o jeziku OpenXTalk lahko dobite na uradnem <a href="https://forums.openxtalk.org/">forumu</a>.
+
+<a href="https://trinajstica.github.io/ua/">Spletna stran.</a>

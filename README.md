@@ -19,11 +19,11 @@ Izvršne datoteke:
 
 OpenXTalk omogoča prevajanje izvorne kode (z določenimi nastavitvami), za uporabnike, ki niso vešči prevajanja izvršne kode so že pripravljene izvršne datoteke v naslednjih arhivih:
 
-Windows verzja: <a href="https://ugankarskiasistent.ga/prenos/ua64-windows.zip">prenos</a> 64 bit ali <a href="https://ugankarskiasistent.ga/prenos/ua32-windows.zip">prenos</a> 32 bit
+Windows verzja: <a href="https://github.com/trinajstica/ua/raw/master/bin/ua64-windows.zip">prenos</a> 64 bit ali <a href="https://github.com/trinajstica/ua/raw/master/bin/ua32-windows.zip">prenos</a> 32 bit
 
-Linux verzija: <a href="https://ugankarskiasistent.ga/prenos/ua64-linux.zip">prenos</a> 64 bit
+Linux verzija: <a href="https://github.com/trinajstica/ua/raw/master/bin/ua64-linux.zip">prenos</a> 64 bit
 
-Mac OS X verzija: <a href="https://ugankarskiasistent.ga/prenos/ua64-macosx.zip">prenos</a> 64 bit
+Mac OS X verzija: <a href="https://github.com/trinajstica/ua/raw/master/bin/ua64-macosx.zip">prenos</a> 64 bit
 
 Android od verzije 5 naprej: <a href="https://play.google.com/store/apps/details?id=com.preprosto.ua3">Google Play trgovina</a> (armv7, arm64, x86 in x86_64)
 

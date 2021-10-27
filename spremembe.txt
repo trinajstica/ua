@@ -1,0 +1,137 @@
+ZGODOVINA POSODOBITEV APLIKACIJE: UGANKARSKI ASISTENT
+
+v4.1.0.0 - [27.10.2021] - verzija se naslanja v celoti na github strežnik, kjer se
+                          nahaja datoteka "verzija" in "4.1.0.0" v katero vpisujemo
+                          spremembe v bazi (ročno), več informacij o teh datotekah
+                          se nahaja na https://github.com/trinajstica/ua, drugih
+                          vidnih sprememb v samem programu ni, razen to, da je
+                          opensource verzija sedaj posodobljena tudi s podatki,
+                          ki jih prej ni bilo, če bo komu koristilo.
+
+v4.0.0.6 - [24.09.2021] - posodobljena baza, prevedeno z OpenXTalk namesto LiveCode, samo
+                          android verzija je prevedena z LiveCode, ki pa ni več open source
+			  in prezplačna, zato postaja nezanimiva za uporabo in v duhu
+			  odprte kode.
+
+           [05.09.2021] - PC verzije: Linux, popravek za backspace (tipka brisanje nazaj)
+                          se ne obnaša enako, kot na Windows, zato je njena funkcija
+                          pod Linuxom izključena v tem popravku. Posodobitev baze.
+
+           [08.08.2021] - Android in PC verzije: anonimno pošiljanje sprememb
+                          baze zopet deluje, ostaja možnost, v kolikor pride do
+                          napake pri povezavah, da se odpre vaš epoštni program
+
+           [05.08.2021] - dolžina opisa se spreminja (vizualno) tudi na širših
+                          zaslonih, posodobljena baza, pravilno odpira epoštnega
+                          klijenta, ki ga lahko izberete za mailto protokol, če
+                          ga že nimate definiranega, prevedeno z novejšim orodjem
+                          (LiveCode Community 9.6.3)
+
+           [27.07.2021] - posodobljena baza, namizna verzija ima enako višino
+                          pisave kot na pametnih telefonih
+
+           [22.07.2021] - android: prikazovanje zadetkov v nekoliko manjši
+                          velikosti pisave, izvoz/uvoz baze popravlejn, deluje
+                          pravilno, izvaža se v mapo, ki je dostopna preko
+                          file managerja (files ali datoteke)
+
+           [06.06.2021] - posodobljena baza, pošiljanje sprememb preko epoštnega klijenta
+
+           [20.05.2021] - posodobljena baza, prevedeno z novejšim orodjem (LiveCode Community 9.6.2)
+
+           [21.12.2020] - android - popravek v sistemu doniranja in osvežena baza
+
+           [24.10.2020] - manjši popravek v iskalnem polju (vnosno polje),
+                          besedilo lepše sede v polje (centrirano) za android
+
+           [30.08.2020] - android verzija omogoča večkratno donacijo za razvoj (R)
+
+           [17.08.2020] - posodobljena podakovna baza za vse izdaje
+
+           [05.08.2020] - android verzija ima možnost izvoza datoteke database.db
+                          v uporabniku dostopno mapo Prenos(i) oz. Download. Uvoz poteka prav
+                          tako samo iz te mape. [?] -> [Izvoz/Uvoz] -> [Izvoz] ali [Uvoz]
+
+           [18.06.2020] - namizna (desktop) verzija ima možnost shranjevanja
+                          lokacije zaprtja, tako se bo ob odprtju zagnala prav tam, kjer
+                          ste jo zaprli v enaki velikosti, kot ob zaprtju.
+
+v4.0.0.5 - [29.05.2020] - android verzija: optimizacija nekaterih procesov
+
+           [15.05.2020] - android verzija: izhod iz aplikacije na potrditev
+
+           [06.04.2020] - vzdrževalna verzija
+
+v4.0.0.4 - [05.03.2020] - dvoklik na izbran iskalni zadetek prikaže okno,
+                          kjer lahko preberete daljše opise gesel. Pri dodajanju gesla
+                          se preveri, če geslo vsebuje presledek (ločilo med geslom in
+                          opisom, ki ni dovoljeno) in se opis odvzame.
+
+v4.0.0.3 - nekaj kozmetičnih popravkov v besedilih (pri posodobitvah baze),
+           nekaj optimizacij za bolj gladko delovanje.
+
+v4.0.0.2 - bugfix izdaja, odpravljen "hrošč" označevanja besedila v iskalnem
+           polju, nekaj kozmetičnih sprememb (gumbi), višja pisava v iskalnem
+           polju, kurzor pravilno v sredini iskalnega polja, v android verzijo
+           vgrajena potisna sporočila, možnost obveščanja o novostih, in podobno.
+
+v4.0.0.1 - odzivnost tipkovnice pri delu brez miške je bolj logična,
+           registracijski podatki se prikažejo pravilno, v bazi preko
+           300 novih vnosov, popravkov in izbrisov, dvoklik miške, na
+           prazno okolico gumbov je enako pritisku tipke enter, ...
+
+v4.0.0.0 - nova verzija, sprememba osnovnih barv iz oranžne v vijolo,
+           flat izgled, popravljeno obnašanje pri iskanju, kjer je bil
+           vedno izbran zadnji zadetek, sedaj se obnaša "grid" pravilno,
+           označi prvi zadetek od vseh, vizualno so poravnani gumbi,
+           omejitev črk je umaknjena, vpisuje se lahko vse črke,
+           ki jih prepozna vaš sistem.
+
+v3.0.0.10 - vzdrževalna verzija, 64 bit verzija za android
+
+v3.0.0.9 - izboljšan način preverjanja za novimi namiznimi verzijami
+           (30 sekund po zagonu), prikaz verzije programa v kratki pomoči
+           na gumbu [?]
+
+v3.0.0.8 - zopet nekaj kozmetike okrog gumbov, pri posodobitvah se
+           prikazuje trenutno stanje posodobljenih vpisov v bazo gesel
+           in pozicija v odstotkih (do 100%), slednje se prikazuje v iskalnem
+           polju, od tega trenutka naprej imamo možnost utišati preverjanje
+           za novimi desktop verzijami programa
+
+v3.0.0.7 - nekaj kozmetičnih popravkov gumbov, in popravek iskalnega polja
+           (centriranje)
+
+v3.0.0.6 - odpravljen hrošč pri vpisu gesla (presledki se izbrišejo),
+           štejemo tudi posodobitve, ki se izvedejo v bazi (brisanje se
+           šteje vedno, tudi če ni prišlo do dejanskega izbrisa, zaradi
+           same hitrosti nisem implementiral preverjanja, če geslo z
+           opisom v resnici obstajata, za to poskrbi kar sam sql), se
+           pozna, če imamo veliko sprememb za uveljaviti
+
+v3.0.0.5 - odpravljenih nekaj hroščev, optimizacija za še hitrejše iskanje
+
+v3.0.0.4 - dodelano preverjanje za novimi posodobitvami programa
+
+v3.0.0.3 - posodobitev baze se izvaja ročno, do funkcije posodobitev baze
+           dostopate preko gumba [?] -> [Pos. baze].
+
+v3.0.0.2 - pretvorba strani in naslovov iz http v https, na mobilnih
+           napravah izključena možnost preverjanja za nove verzije (za to
+           skrbi sam google play)
+
+v3.0.0.1 - dodana možnost za upravljanje programa preko tipkovnice
+           (Uredi / Izbriši / Dodaj / F1-? / Registracija / Pošlji spremembe)
+           Ko se fokus premakne v zadetke, lahko uporabite enter za
+           ponovno iskanje, backspace (brisanje nazaj) za izbris iskanega
+           besedila in premik v iskalno vrstico, U za urejanje, I ali
+           DEL za izbris, D za dodajanje novega opisa iskanega gesla ali
+           novega gesla in opisa in F1 za pomoč.
+
+v3 - Izdana verzija za Win, Lin64, MacOsX in Android (v4+ in v8+) v letu 2018
+
+
+
+
+
+

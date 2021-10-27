@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Ugankarski Asistent",
-    "currentPage": "index.html",
+    "currentPage": "httpstrinajstica.github.ioua.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -23,11 +23,11 @@
         "display7Size": 1.2,
         "display4Font": "Jost",
         "display4Size": 1.1,
-        "isRoundedButtons": false,
-        "isGhostButtonBorder": false,
+        "isRoundedButtons": true,
+        "isGhostButtonBorder": true,
         "underlinedLinks": false,
         "isAnimatedOnScroll": false,
-        "isScrollToTopButton": false
+        "isScrollToTopButton": true
       },
       "additionalSetColors": [
         "#cf66ff"
@@ -44,17 +44,31 @@
     ],
     "uniqCompNum": 4,
     "versionPublish": "5.4.6",
-    "imageResize": true
+    "imageResize": true,
+    "screenshot": "screenshot.png",
+    "witsec-language": "sl",
+    "favicon": false,
+    "mbrsiteDomain": "99oamj92fw",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "witsec-jquery": false,
+    "witsec-white-label": true,
+    "witsec-mailform": false
   },
   "pages": {
-    "index.html": {
+    "httpstrinajstica.github.ioua.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
+        "title": "Ugankarski Asistent",
+        "meta_descr": "Ugankarski pripomoček za pomoč pri reševanju križank in ugank vsebuje veliko število različnih gesel, ki so prosto dostopna na spletu, pridobljena pri reševanju križank in zbrana v podatkovno bazo, ki jo pomagate posodabljati tudi vi!",
         "header_custom": "",
         "footer_custom": "",
-        "html_before": ""
+        "html_before": "",
+        "meta_image": "@PROJECT_PATH@/assets/images/mbr-1-1920x1280.jpg"
       },
       "components": [
         {

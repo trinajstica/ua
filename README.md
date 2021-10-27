@@ -1,8 +1,6 @@
 # Ugankarski Asistent - izdelano v <a href="https://github.com/OpenXTalk-org">OpenXTalk</a>
 <a href="https://ugankarskiasistent.ga"><p style="text-align:center;"><img src="ua.png" alt="Ugankarski Asistent"></p></a>
 
-Podatkovna baza za Ugankarski Asistent (https://ugankarskiasistent.ga) v SQLITE v3 formatu in izvorna koda v OpenXTalk programskem jeziku.
-
 <a href="LICENSE">LICENCA</a>
 
 Izvorno kodo (datoteka <a href="ua4-os.otxstack">ua4-os.otxstack</a>) odprete z OpenXTalk, kliknete na "Browse tool", aplikacija je pripravljena za delo. V kolikor dodate tudi <a href="database.db">database.db</a> datoteko ob izvorni kodi, boste lahko tudi iskali po bazi vseh gesel in opisov. Če želite začeti z lastno kreacijo baze, potem preimenujte database-prazna.db v database.db, brez tega program ne bo deloval pravilno.

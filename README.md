@@ -1,5 +1,5 @@
 # Ugankarski Asistent - izdelano v <a href="https://github.com/OpenXTalk-org">OpenXTalk</a>
-<a href="https://ugankarskiasistent.ga"><p style="text-align:center;"><img src="ua.png" alt="Ugankarski Asistent"></p></a>
+<p style="text-align:center;"><img src="ua.png" alt="Ugankarski Asistent"></p>
 
 <a href="LICENSE">LICENCA</a>
 
@@ -10,8 +10,7 @@ Kako deluje:
 * Aplikacija omogoča iskanje, dodajanje novih, urejanje obstoječih in brisanje gesel in opisov.
 * Iskanje poteka tako, da vpišemo v iskalno vrstico zaporedje znakov za gesla (primer: "REŠETO"), lahko uporabimo znak za piko "." za vse neznane črke v geslu, v kolikor želimo zožiti zadetke pa lahko dodamo ob geslu tudi delni opis gesla, ločen s presledkom (primer: "REŠETO SITO").
 * Iskanje lahko izvedemo tudi samo po opisu, zato vpišemo v iskalno vrstico delni opis, uporabimo tudi presledek (primer: " SITO"), ki ločuje geslo od opisa.
-* Kako deluje zbiranje gesel in opisov uporabnikov? Aplikacija omogoča pošiljanje sprememb uporabnikov, ki pošiljajo svoja urejanja gesel in opisov preko prilubljenega epoštnega klijenta. Na epoštni naslov prejmem sporočilo v formatu, ki ga lahko (z nekaj popravki) s pomočjo internega programa vnesem v MYSQL bazo na strežniku, ki služi kot podlaga za spletno iskanje na naslovu https://ugankarskiasistent.ga/iskanje.html, nato iste podatke shranim v datoteko na strežniku, ki jo ob sprožitvi posodobitve baze s strani uporabnika, program prebere in vnese neobstoječe zapise, popravke v lokalno bazo uporabnika, tako postanejo vsi popravki dostopni vsem uporabnikom dotične verzije programa.
-* Vsaka verzija ima svojo lastno datoteko s spremembami, ki se dopolnjuje vsakič, ko se prejme popravke s strani uporabnika. Datoteko izpraznim (ponastavim) ob posodobitvah arhivov, ki že vsebujejo zadnjo verzijo podatkovne baze. Če ne posodabljate redno, je pametno, da vsake toliko povlečete arhiv in zamenjate database.db (še prej pa pošljete spremembe).
+* Kako deluje zbiranje gesel in opisov uporabnikov? Aplikacija omogoča pošiljanje sprememb uporabnikov, ki pošiljajo svoja urejanja gesel in opisov preko prilubljenega epoštnega klijenta. Te podatke se shrani v datoteko za tekočo verzijo (primer: 4.1.0.0), ki jo program pri posodobitvah na zahtevo prebere in vstavi spremembe v vašo bazo.
 
 Izvršne datoteke:
 
@@ -24,9 +23,5 @@ Linux verzija: <a href="https://github.com/trinajstica/ua/raw/master/bin/ua64-li
 Mac OS X verzija: <a href="https://github.com/trinajstica/ua/raw/master/bin/ua64-macosx.zip">prenos</a> 64 bit
 
 Android od verzije 5 naprej: <a href="https://play.google.com/store/apps/details?id=com.preprosto.ua3">Google Play trgovina</a> (armv7, arm64, x86 in x86_64)
-
-<a href="https://ugankarskiasistent.ga/#donacija">Donirajte</a> za razvoj.
-
-Obiščete lahko tudi <a href="https://ugankarskiasistent.ga/iskanje.html">on-line</a> različico.
 
 Več informacij o jeziku OpenXTalk lahko dobite na uradnem <a href="https://forums.openxtalk.org/">forumu</a>.

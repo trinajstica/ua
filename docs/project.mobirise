@@ -1,0 +1,163 @@
+{
+  "settings": {
+    "name": "Ugankarski Asistent",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#cf66ff"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.4.6",
+    "siteFonts": [
+      {
+        "css": "'Jost', sans-serif",
+        "name": "Jost",
+        "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "uniqCompNum": 3,
+    "versionPublish": "5.4.6",
+    "imageResize": true
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            ".social-row": {
+              ".soc-item": {
+                "display": "inline-block",
+                "text-align": "center",
+                "margin-bottom": "1rem",
+                "margin-right": ".7rem",
+                ".mbr-iconfont": {
+                  "font-size": "32px",
+                  "border-radius": "50%",
+                  "padding": "0.6rem",
+                  "border": "2px solid @socialIconColor",
+                  "transition": "all 0.3s",
+                  "color": "@socialIconColor",
+                  "&:hover": {
+                    "background-color": "@socialIconColor",
+                    "color": "contrast(@socialIconColor)"
+                  }
+                }
+              }
+            }
+          },
+          "_name": "header13",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header13\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value>Left</option>\n            <option value=\"justify-content-center\" selected>Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Social\" name=\"showSocial\">\n        <input type=\"range\" name=\"socialCount\" title=\"Count\" min=\"1\" max=\"5\" step=\"1\" value=\"3\" condition=\"showSocial\">\n        <input type=\"color\" title=\"Color\" name=\"socialIconColor\" value=\"#232323\" condition=\"showSocial\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1920x1280.jpg\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#6592e6\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><i style><b>Ugankarski Asistent</b></i></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style mb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn, .social-row\"><b>\n                    križankarski pripomoček\n                </b></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                    <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Create\n                        Your Website!</a>\n                </div>\n                <div class=\"social-row display-7 mt-5\" mbr-if=\"showSocial\">\n                    <div class=\"soc-item\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon socicon-facebook\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\" mbr-if=\"socialCount>1\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon socicon-twitter\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\" mbr-if=\"socialCount>2\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon socicon-instagram\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\" mbr-if=\"socialCount>3\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon socicon-youtube\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\" mbr-if=\"socialCount>4\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon socicon-telegram\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sN4e6lkFeE",
+          "_anchor": "header13-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            "@media (min-width: 1500px)": {
+              ".container": {
+                "max-width": "1400px"
+              }
+            },
+            ".mbr-iconfont": {
+              "display": "block",
+              "font-size": "5rem",
+              "color": "@iconColor",
+              "margin-bottom": "2rem"
+            },
+            ".card-wrapper": {
+              "margin-top": "3rem"
+            },
+            ".row": {
+              "justify-content": "center"
+            }
+          },
+          "_name": "features1",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features1\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\">\n        <header>Card</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcon\" checked>\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#6592e6\" selected condition=\"showIcon\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#8caff0\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\" mbr-if=\"showMainTitle || showMainSubtitle\" mbr-class=\"{'col-lg-9': cardsAmount == '3'}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\">\n                    <b>Features</b>\n                </h3>\n                <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    List main features of your project in this block\n                </h5>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"card col-12 col-md-6 col-lg-3\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-center\">\n                        <div class=\"iconfont-wrapper\" mbr-if=\"showIcon\">\n                            <span mbr-icon class=\"mbr-iconfont mbrib-target\"></span>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Več OS</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">Deluje na več različnih OS:<br>Android, Linux, Mac OS in Windows.</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-6 col-lg-3\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-center\">\n                        <div class=\"iconfont-wrapper\" mbr-if=\"showIcon\">\n                            <span mbr-icon class=\"mbr-iconfont mbrib-clock\"></span>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Enostavna uporaba</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">Uporaba brez kompliciranja, geslo in opis loči presledek, neznane črke pa pika.</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-6 col-lg-3\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-center\">\n                        <div class=\"iconfont-wrapper\" mbr-if=\"showIcon\">\n                            <span mbr-icon class=\"mbr-iconfont mbrib-speed\"></span>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Hitrost</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">Ne glede na količino gesel in opisov, so podatki vedno dostopni v nekaj stotinkah.</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-6 col-lg-3\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-center\">\n                        <div class=\"iconfont-wrapper\" mbr-if=\"showIcon\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-sites mobi-mbri\"></span>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Unlimited Sites</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">Use Mobirise website building software to create multiple\n                            sites for commercial and non-profit projects.</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sN4fXvIVKS",
+          "_anchor": "features1-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content5",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#bed3f9\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Enter your subtitle here\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Ugankarski pripomoček za pomoč pri reševanju križank in ugank vsebuje veliko število različnih gesel, ki so prosto dostopna na spletu, pridobljena pri reševanju križank in zbrana v podatkovno bazo, ki jo pomagate posodabljati tudi vi! Program je brezplačen za uporabo, lahko pa donirate za razvoj.<br><br>Deluje na več različnih operacijskih sistemih: Android (armv7, arm64, x86 in x86_64), Linux (x64), Mac OS (x64) in Windows (x86 in x86_64). Program odlično deluje na <a href=\"https://www.bluestacks.com/\" class=\"text-primary\" target=\"_blank\">Bluestacks</a> android emulatorju, deluje tudi na: <a href=\"https://www.genymotion.com/\" class=\"text-primary\" target=\"_blank\">Genymotion</a>, <a href=\"https://www.memuplay.com/\" class=\"text-primary\" target=\"_blank\">MEmu</a>, <a href=\"https://www.bignox.com/\" class=\"text-primary\" target=\"_blank\">Nox</a>, <a href=\"https://developer.android.com/studio/run/emulator\" class=\"text-primary\" target=\"_blank\">Android Studio’s emulator</a>, kot tudi <a href=\"https://duckduckgo.com/?q=android+emulator\" class=\"text-primary\" target=\"_blank\">drugih</a>.<br><br>Za delovanje ne potrebuje internetne povezave, razen za posodobitve baze in prenos nove verzije programa.<br><br>S programom lahko urejate obstoječe opise gesel, izbrišete ali dodajate nova gesla in opise. Vaše popravke lahko pošljete preko epošte  na naš naslov, vključeni bodo v bazo gesel in s tem dostopni vsem uporabnikom Ugankarskega Asistenta.<br><br>Prosim, upoštevajte dva pravila za vnos gesla in opisa v bazo:<br><br>- vnos gesla naj bo brez presledkov<br>- vnos opisa naj ne vsebuje okrajšav<br><br>Hvala vsem, ki urejate podatkovno bazo!<br><br><b>PRENOS APLIKACIJE</b><br><br>Prenos aktualne verzije (spremembe v aplikaciji):<br><br>Windows verzja: <a href=\"https://github.com/trinajstica/ua/raw/master/bin/ua64-windows.zip\" class=\"text-primary\">prenos</a> 64 bit ali <a href=\"https://github.com/trinajstica/ua/raw/master/bin/ua32-windows.zip\" class=\"text-primary\">prenos</a> 32 bit<br><br>Linux verzija: <a href=\"https://github.com/trinajstica/ua/raw/master/bin/ua64-linux.zip\" class=\"text-primary\">prenos</a> 64 bit<br><br>Mac OS X verzija: <a href=\"https://github.com/trinajstica/ua/raw/master/bin/ua64-macosx.zip\" class=\"text-primary\">prenos</a> 64 bit<br><br>Android od verzije 5 naprej: <a href=\"https://play.google.com/store/apps/details?id=com.preprosto.ua3\" class=\"text-primary\" target=\"_blank\">Google Play trgovina</a> (armv7, arm64, x86 in x86_64)<br><br>Izvorna koda v <a href=\"https://forums.openxtalk.org/\" class=\"text-primary\" target=\"_blank\">OpenXTalk</a> programskem jeziku.<br><br>Programa ni potrebno nameščati, arhiv odpakirate na namizje ali drugam in ga zaženete iz mape. Velja za vse PC verzije. MAC aplikacijo morate premakniti (preprosta povleci in spusti operacija) v mapo Applications. Android aplikacijo poženete s svojega pametnega telefona.<br><br>Ne prepišite si database.db datoteke, če imate že spremembe gesel in opisov oz. dodane nove vnose. <br><br>Android verzija ima varnostno kodo, ki skrbi, da se pri zagonu ne prepiše podakovna baza, v nasprotnem morate prej android verzijo odstraniti in morda celo počistiti podatke aplikacije ročno (Podatki o aplikaciji -&gt; shranjevanje -&gt; počisti podatke). <br><br>Posodobitev podatkovne baze izvedete preko gumba [ ? ] in [ Pos. baze ].<br><br>Opozorilo za android verzijo: v kolikor se pri vnosu pike (za neznane črke) pojavi za piko presledek, se odpravi to \"neprijetnost\" v nastavitvah za vašo android tipkovnico, kjer izključite možnost avtomatskega dodajanja presledka za piko.<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sN4gU2xEXj",
+          "_anchor": "content5-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}

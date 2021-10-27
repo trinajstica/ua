@@ -1,5 +1,5 @@
 # Ugankarski Asistent - izdelano v <a href="https://github.com/OpenXTalk-org">OpenXTalk</a>
-<a href="https://ugankarskiasistent.ga"><p style="text-align:center;"><img src="ua.png" alt="Ugankarski Asistent"></p></a>
+<p style="text-align:center;"><img src="ua.png" alt="Ugankarski Asistent"></p>
 
 <a href="LICENSE">LICENCA</a>
 
@@ -24,9 +24,5 @@ Linux verzija: <a href="https://github.com/trinajstica/ua/raw/master/bin/ua64-li
 Mac OS X verzija: <a href="https://github.com/trinajstica/ua/raw/master/bin/ua64-macosx.zip">prenos</a> 64 bit
 
 Android od verzije 5 naprej: <a href="https://play.google.com/store/apps/details?id=com.preprosto.ua3">Google Play trgovina</a> (armv7, arm64, x86 in x86_64)
-
-<a href="https://ugankarskiasistent.ga/#donacija">Donirajte</a> za razvoj.
-
-Obiščete lahko tudi <a href="https://ugankarskiasistent.ga/iskanje.html">on-line</a> različico.
 
 Več informacij o jeziku OpenXTalk lahko dobite na uradnem <a href="https://forums.openxtalk.org/">forumu</a>.

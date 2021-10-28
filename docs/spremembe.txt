@@ -5,13 +5,10 @@ v4.1.0.0 - [27.10.2021] - verzija se naslanja v celoti na github strežnik, kjer
                           spremembe v bazi (ročno), več informacij o teh datotekah
                           se nahaja na https://github.com/trinajstica/ua, drugih
                           vidnih sprememb v samem programu ni, razen to, da je
-                          opensource verzija sedaj posodobljena tudi s podatki,
-                          ki jih prej ni bilo, če bo komu koristilo.
+                          verzija sedaj posodobljena tudi s podatki, ki jih prej 
+                          ni bilo, če bo komu koristilo.
 
-v4.0.0.6 - [24.09.2021] - posodobljena baza, prevedeno z OpenXTalk namesto LiveCode, samo
-                          android verzija je prevedena z LiveCode, ki pa ni več open source
-			  in prezplačna, zato postaja nezanimiva za uporabo in v duhu
-			  odprte kode.
+v4.0.0.6 - [24.09.2021] - posodobljena baza, prevedeno z OpenXTalk namesto LiveCode
 
            [05.09.2021] - PC verzije: Linux, popravek za backspace (tipka brisanje nazaj)
                           se ne obnaša enako, kot na Windows, zato je njena funkcija
@@ -25,7 +22,6 @@ v4.0.0.6 - [24.09.2021] - posodobljena baza, prevedeno z OpenXTalk namesto LiveC
                           zaslonih, posodobljena baza, pravilno odpira epoštnega
                           klijenta, ki ga lahko izberete za mailto protokol, če
                           ga že nimate definiranega, prevedeno z novejšim orodjem
-                          (LiveCode Community 9.6.3)
 
            [27.07.2021] - posodobljena baza, namizna verzija ima enako višino
                           pisave kot na pametnih telefonih

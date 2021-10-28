@@ -1,6 +1,9 @@
 ZGODOVINA POSODOBITEV APLIKACIJE: UGANKARSKI ASISTENT
 
-v4.1.0.0 - [27.10.2021] - verzija se naslanja v celoti na github strežnik, kjer se
+v4.1.0.0 - [28.10.2021] - nekaj malih popravkov, odstranjena podpora za smtp strežnik,
+                          pošiljanje sprememb samo preko epoštnih programov
+                          
+           [27.10.2021] - verzija se naslanja v celoti na github strežnik, kjer se
                           nahaja datoteka "verzija" in "4.1.0.0" v katero vpisujemo
                           spremembe v bazi (ročno), več informacij o teh datotekah
                           se nahaja na https://github.com/trinajstica/ua, drugih

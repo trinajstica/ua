@@ -1,4 +1,4 @@
-# Ugankarski Asistent - izdelano v <a href="https://github.com/OpenXTalk-org">OpenXTalk</a>
+# Ugankarski Asistent - izdelano v <a href="https://github.com/OpenXTalk-org">OpenXTalk</a>, Programiranje: barko
 <p style="text-align:center;"><img src="ua.png" alt="Ugankarski Asistent"></p>
 
 <a href="LICENSE">LICENCA</a>

@@ -3,7 +3,7 @@
 
 <a href="LICENSE">LICENCA</a>
 
-Izvorno kodo (datoteka <a href="ua4-os.oxtstack">ua4-os.oxtstack</a>) odprete z OpenXTalk, kliknete na "Browse tool", aplikacija je pripravljena za delo. V kolikor dodate tudi <a href="database.db">database.db</a> datoteko ob izvorni kodi, boste lahko tudi iskali po bazi vseh gesel in opisov. Če želite začeti z lastno kreacijo baze, potem preimenujte database-prazna.db v database.db, brez tega program ne bo deloval pravilno.
+Izvorno kodo (datoteka <a href="ua4.livecode">ua4.livecode</a>) odprete z OpenXTalk, kliknete na "Browse tool", aplikacija je pripravljena za delo. V kolikor dodate tudi <a href="database.db">database.db</a> datoteko ob izvorni kodi, boste lahko tudi iskali po bazi vseh gesel in opisov. Če želite začeti z lastno kreacijo baze, potem preimenujte database-prazna.db v database.db, brez tega program ne bo deloval pravilno.
 
 Kako deluje:
 

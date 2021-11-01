@@ -14,7 +14,7 @@ Kako deluje:
 
 Izvršne datoteke:
 
-OpenXTalk omogoča prevajanje izvorne kode (z določenimi nastavitvami), za uporabnike, ki niso vešči prevajanja izvršne kode so že pripravljene izvršne datoteke v naslednjih arhivih:
+OpenXTalk omogoča prevajanje izvorne kode, za uporabnike, ki niso vešči prevajanja izvršne kode so že pripravljene izvršne datoteke v naslednjih arhivih:
 
 Windows verzja: <a href="https://github.com/trinajstica/ua/raw/master/bin/ua64-windows.zip">prenos</a> 64 bit ali <a href="https://github.com/trinajstica/ua/raw/master/bin/ua32-windows.zip">prenos</a> 32 bit
 

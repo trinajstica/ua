@@ -10,7 +10,7 @@ Kako deluje:
 * Aplikacija omogoča iskanje, dodajanje novih, urejanje obstoječih in brisanje gesel in opisov.
 * Iskanje poteka tako, da vpišemo v iskalno vrstico zaporedje znakov za gesla (primer: "REŠETO"), lahko uporabimo znak za piko "." za vse neznane črke v geslu, v kolikor želimo zožiti zadetke pa lahko dodamo ob geslu tudi delni opis gesla, ločen s presledkom (primer: "REŠETO SITO").
 * Iskanje lahko izvedemo tudi samo po opisu, zato vpišemo v iskalno vrstico delni opis, uporabimo tudi presledek (primer: " SITO"), ki ločuje geslo od opisa.
-* Kako deluje zbiranje gesel in opisov uporabnikov? Aplikacija omogoča pošiljanje sprememb uporabnikov, ki pošiljajo svoja urejanja gesel in opisov preko prilubljenega epoštnega klijenta. Te podatke se shrani v datoteko za tekočo verzijo (primer: 4.1.0.0), ki jo program pri posodobitvah na zahtevo prebere in vstavi spremembe v vašo bazo.
+* Kako deluje zbiranje gesel in opisov uporabnikov? Aplikacija omogoča pošiljanje sprememb uporabnikov, ki pošiljajo svoja urejanja gesel in opisov preko prilubljenega epoštnega klijenta. Te podatke se shrani v datoteko za tekočo verzijo (primer: <a href="4.1.0.0">4.1.0.0</a>), ki jo program pri posodobitvah na zahtevo prebere in vstavi spremembe v vašo bazo.
 
 Izvršne datoteke:
 

@@ -1,7 +1,7 @@
 # Ugankarski Asistent - izdelano v <a href="https://github.com/OpenXTalk-org">OpenXTalk</a>, Programiranje: <a href="https://barko.ga" target="_blank">barko</a>
 <p style="text-align:center;"><img src="ua.png" alt="Ugankarski Asistent"></p>
 
-<a href="LICENSE">LICENCA</a>
+<a href="LICENSE">LICENCA</a> in KRATKA OBRAZLOŽITEV, UPORABA
 
 Izvorno kodo (datoteka <a href="ua4.oxtstack">ua4.oxtstack</a>) odprete z OpenXTalk, kliknete na "Browse tool", aplikacija je pripravljena za delo. V kolikor dodate tudi <a href="database.db">database.db</a> datoteko ob izvorni kodi, boste lahko tudi iskali po bazi vseh gesel in opisov. Če želite začeti z lastno kreacijo baze, potem preimenujte database-prazna.db v database.db, brez tega program ne bo deloval pravilno.
 

@@ -708,6 +708,8 @@ a {
   transition: color 0.6s;
 }
 .cid-sN4e6lkFeE {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   background-image: url("../../../assets/images/mbr-1920x1280.jpg");
 }
 .cid-sN4e6lkFeE .social-row .soc-item {
@@ -730,6 +732,11 @@ a {
 }
 .cid-sN4e6lkFeE h1 {
   text-shadow: 2px 2px 5px #137fd8;
+}
+.cid-sN4e6lkFeE .mbr-text,
+.cid-sN4e6lkFeE .mbr-section-btn,
+.cid-sN4e6lkFeE .social-row {
+  color: #bbbbbb;
 }
 .cid-sN4fXvIVKS {
   padding-top: 4rem;

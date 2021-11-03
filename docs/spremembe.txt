@@ -1,6 +1,6 @@
 ZGODOVINA POSODOBITEV APLIKACIJE: UGANKARSKI ASISTENT
 
-v4.1.0.0 - [02.11.2021] - bolj tekoče posodabljanje, tudi android verzija
+v4.1.0.0 - [03.11.2021] - bolj tekoče posodabljanje, tudi android verzija
 
 		   [28.10.2021] - nekaj malih popravkov, odstranjena podpora za smtp strežnik,
                           pošiljanje sprememb samo preko epoštnih programov

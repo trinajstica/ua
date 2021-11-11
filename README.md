@@ -22,7 +22,8 @@ Linux verzija: <a href="https://github.com/trinajstica/ua/raw/master/bin/ua64-li
 
 Mac OS X verzija: <a href="https://github.com/trinajstica/ua/raw/master/bin/ua64-macosx.zip">prenos</a> 64 bit
 
-Android od verzije 5 naprej: <a href="https://play.google.com/store/apps/details?id=com.preprosto.ua3">Google Play trgovina</a> (armv7, arm64, x86 in x86_64)
+Android od verzije 5 naprej: <a href="https://play.google.com/store/apps/details?id=com.preprosto.ua3">Google Play trgovina</a> ali prenos APKjev <a href="https://github.com/trinajstica/ua/raw/master/bin/ua4_armv7.apk">armv7</a>, <a href="https://github.com/trinajstica/ua/raw/master/bin/ua4_arm64.apk">arm64</a>, <a href="https://github.com/trinajstica/ua/raw/master/bin/ua4_x86.apk">x86</a> ali <a href="https://github.com/trinajstica/ua/raw/master/bin/ua4_x86_64.apk">x86_64</a>
+
 
 Več informacij o jeziku OpenXTalk lahko dobite na uradnem <a href="https://forums.openxtalk.org/">forumu</a>.
 

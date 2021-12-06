@@ -778,13 +778,19 @@ a {
 }
 .cid-sN4gU2xEXj {
   padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   background-color: #bed3f9;
+}
+#hrblock-block-d hr {
+  margin: 0;
 }
 .cid-sNiZop7HsT {
   padding-top: 0rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   background-color: #bed3f9;
+}
+#hrblock-block-e hr {
+  margin: 0;
 }
 .cid-sN6Y4Tuopb {
   padding-top: 0rem;

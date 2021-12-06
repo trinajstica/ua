@@ -42,8 +42,8 @@
         "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 13,
-    "versionPublish": "5.4.6",
+    "uniqCompNum": 15,
+    "versionPublish": "5.5.3",
     "imageResize": true,
     "screenshot": "screenshot.png",
     "witsec-language": "sl",
@@ -268,7 +268,7 @@
           },
           "_name": "content5",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#bed3f9\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Ugankarsko-križankarski pomočnik</h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Ugankarski pripomoček za pomoč pri reševanju križank in ugank vsebuje veliko število različnih gesel, ki so prosto dostopna na spletu, pridobljena pri reševanju križank in zbrana v podatkovno bazo, ki jo pomagate posodabljati tudi vi! Program je brezplačen za uporabo, lahko pa donirate za razvoj.<br><br>Deluje na več različnih operacijskih sistemih: Android (armv7, arm64, x86 in x86_64), Linux (x64), Mac OS (x64) in Windows (x86 in x86_64). Program odlično deluje na <a href=\"https://www.bluestacks.com/\" class=\"text-info\" target=\"_blank\">Bluestacks</a> android emulatorju, deluje tudi na: <a href=\"https://www.genymotion.com/\" class=\"text-info\" target=\"_blank\">Genymotion</a>, <a href=\"https://www.memuplay.com/\" class=\"text-info\" target=\"_blank\">MEmu</a>, <a href=\"https://www.bignox.com/\" class=\"text-info\" target=\"_blank\">Nox</a>, <a href=\"https://developer.android.com/studio/run/emulator\" class=\"text-info\" target=\"_blank\">Android Studio’s emulator</a>, kot tudi <a href=\"https://duckduckgo.com/?q=android+emulator\" class=\"text-info\" target=\"_blank\">drugih</a>.<br><br>Za delovanje ne potrebuje internetne povezave, razen za posodobitve baze in prenos nove verzije programa.<br><br>S programom lahko urejate obstoječe opise gesel, izbrišete ali dodajate nova gesla in opise. Vaše popravke lahko pošljete preko epošte  na naš naslov, vključeni bodo v bazo gesel in s tem dostopni vsem uporabnikom Ugankarskega Asistenta.<br><br>Prosim, upoštevajte dva pravila za vnos gesla in opisa v bazo:<br><br>- vnos gesla naj bo brez presledkov<br>- vnos opisa naj ne vsebuje okrajšav<br><br>Hvala vsem, ki urejate podatkovno bazo!<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#bed3f9\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Ugankarsko-križankarski pomočnik</h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Ugankarski pripomoček za pomoč pri reševanju križank in ugank vsebuje veliko število različnih gesel, ki so prosto dostopna na spletu, pridobljena pri reševanju križank in zbrana v podatkovno bazo, ki jo pomagate posodabljati tudi vi! Program je brezplačen za uporabo, lahko pa donirate za razvoj.<br><br>Deluje na več različnih operacijskih sistemih: Android (armv7, arm64, x86 in x86_64), Linux (x64), Mac OS (x64) in Windows (x86 in x86_64). Program odlično deluje na <a href=\"https://www.bluestacks.com/\" class=\"text-info\" target=\"_blank\">Bluestacks</a> android emulatorju, deluje tudi na: <a href=\"https://www.genymotion.com/\" class=\"text-info\" target=\"_blank\">Genymotion</a>, <a href=\"https://www.memuplay.com/\" class=\"text-info\" target=\"_blank\">MEmu</a>, <a href=\"https://www.bignox.com/\" class=\"text-info\" target=\"_blank\">Nox</a>, <a href=\"https://developer.android.com/studio/run/emulator\" class=\"text-info\" target=\"_blank\">Android Studio’s emulator</a>, kot tudi <a href=\"https://duckduckgo.com/?q=android+emulator\" class=\"text-info\" target=\"_blank\">drugih</a>.<br><br>Za delovanje ne potrebuje internetne povezave, razen za posodobitve baze in prenos nove verzije programa.<br><br>S programom lahko urejate obstoječe opise gesel, izbrišete ali dodajate nova gesla in opise. Vaše popravke lahko pošljete preko epošte  na naš naslov, vključeni bodo v bazo gesel in s tem dostopni vsem uporabnikom Ugankarskega Asistenta.<br><br>Prosim, upoštevajte dva pravila za vnos gesla in opisa v bazo:<br><br>- vnos gesla naj bo brez presledkov<br>- vnos opisa naj ne vsebuje okrajšav<br><br>Hvala vsem, ki urejate podatkovno bazo!<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sN4gU2xEXj",
           "_anchor": "content5-2",
           "_PHPplaceholders": [],
@@ -279,6 +279,43 @@
           "_params": {}
         },
         {
+          "hrColor": "border-color:#000;",
+          "hrShadowColor": "#000",
+          "hrThickness": "border-top-width:3px;",
+          "hrFullWidth": "min-width:0;",
+          "hrWidth": "width:100%;",
+          "hrStyle": "box-shadow: 0 0px 10px 1px black;",
+          "hrPaddingBlock": "padding-bottom:20px; padding-top:20px;",
+          "hrDrawStyle": "min-width:0;width:100%;border-color:#000;box-shadow: 0 0px 10px 1px black;border-top-width:3px;",
+          "_params": {
+            "hrColor": "#000",
+            "bgColor": "#bed3f9",
+            "hrStyleSolid": false,
+            "hrStyleRounded": 3,
+            "hrStyleDotted": false,
+            "hrStyleDashed": false,
+            "hrStyleDouble": false,
+            "hrStyleShadow": true,
+            "hrColorShadow": "#000",
+            "hrThickness": 3,
+            "hrFullWidth": false,
+            "hrWidth": 100,
+            "hrPaddingBlock": 10
+          },
+          "_styles": {
+            "hr": {
+              "margin": "0"
+            }
+          },
+          "alias": "hrblock",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "hrblock-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "hrblock-block-d"
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
@@ -287,7 +324,7 @@
           },
           "_name": "content5",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#bed3f9\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">Beseda ali dve okoli uporabe, namestitve</h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Programa ni potrebno nameščati, arhiv odpakirate na namizje ali drugam in ga zaženete iz mape. Velja za vse PC verzije. MAC aplikacijo morate premakniti (preprosta povleci in spusti operacija) v mapo Applications. Android aplikacijo poženete s svojega pametnega telefona.<br><br>Ne prepišite si database.db datoteke, če imate že spremembe gesel in opisov oz. dodane nove vnose v kolikor jih niste delili preko gumba [ P ] in niso dostopni v naši javni bazi, drugače pa so vaši vnosi shranjeni v javno dostopni bazi in v vsaki novi izdaji aplikacije ter na <a href=\"https://github.com/trinajstica/ua\" class=\"text-info\" target=\"_blank\">githubu</a>.<br><br>Android verzija ima varnostno kodo, ki skrbi, da se pri zagonu ne prepiše podakovna baza, v nasprotnem morate prej android verzijo odstraniti in morda celo počistiti podatke aplikacije ročno (Podatki o aplikaciji -&gt; shranjevanje -&gt; počisti podatke).<br><br>Posodobitev podatkovne baze izvedete preko gumba [ ? ] in [ Pos. baze ].<br><br><i>Opozorilo za android verzijo: v kolikor se pri vnosu pike (za neznane črke) pojavi za piko presledek, se odpravi to \"neprijetnost\" v nastavitvah za vašo android tipkovnico, kjer izključite možnost avtomatskega dodajanja presledka za piko.</i><br><br><b style>Uporaba iskalnika:</b>&nbsp;geslo in opis sta v iskalniku ločena s presledkom, gesla so vpisana brez presledkov, tudi več besedna, tako kot so vpisana v križankah. Geslo lahko vsebuje tudi pike za neznane črke. V kolikor želite videti vse zadetke, dodate na konec gesla ali opisa znak plus (+). Nekaj primerov iskanja:<br><br>[geslo] - iskanje po geslu (primer: rešeto)<br><br>[geslo opis] - iskanje po geslu in opisu (primer: rešeto sito)<br><br>[ opis] - iskanje po opisu (presledek opis)<br><br>[ge.lo] - iskanje po geslu z neznano črko (uporabimo pike za neznane črke)<br><br>[ge.lo opis] - iskanje po geslu z neznanimi črkami in opisu (primer: re..to sito)<br><br><i><b>Kako zaženemo aplikacijo iz razvojnega okolja <a href=\"https://github.com/trinajstica/OpenXTalk-IDE\" class=\"text-primary\" target=\"_blank\"><b>OpenXTalk</b></a>?</b> Preprosto. Odpakiramo preneseni arhiv OpenXTalk IDE, iz priloženih arhivov v mapi&nbsp;IDE Bundle/Contents/Tools</i>&nbsp;(<i><b>OpenXTalk.exe.zip</b></i> za Windows ali&nbsp;<i><b>OpenXTalk.x86_64.zip</b></i> za Linux) izvlečemo izvržno datoteko in jo poženemo, odpremo <i><b>ua.oxtstack</b></i> aplikacijo in jo zaženemo s klikom v orodni vrstici na gumb <i>Browse Tool</i>. Ostalo pa boste morali odkriti kar sami.</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#bed3f9\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">Beseda ali dve okoli uporabe, namestitve</h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Programa ni potrebno nameščati, arhiv odpakirate na namizje ali drugam in ga zaženete iz mape. Velja za vse PC verzije. MAC aplikacijo morate premakniti (preprosta povleci in spusti operacija) v mapo Applications. Android aplikacijo poženete s svojega pametnega telefona.<br><br>Ne prepišite si database.db datoteke, če imate že spremembe gesel in opisov oz. dodane nove vnose v kolikor jih niste delili preko gumba [ P ] in niso dostopni v naši javni bazi, drugače pa so vaši vnosi shranjeni v javno dostopni bazi in v vsaki novi izdaji aplikacije ter na <a href=\"https://github.com/trinajstica/ua\" class=\"text-info\" target=\"_blank\">githubu</a>.<br><br>Android verzija ima varnostno kodo, ki skrbi, da se pri zagonu ne prepiše podakovna baza, v nasprotnem morate prej android verzijo odstraniti in morda celo počistiti podatke aplikacije ročno (Podatki o aplikaciji -&gt; shranjevanje -&gt; počisti podatke).<br><br>Posodobitev podatkovne baze izvedete preko gumba [ ? ] in [ Pos. baze ].<br><br><i>Opozorilo za android verzijo: v kolikor se pri vnosu pike (za neznane črke) pojavi za piko presledek, se odpravi to \"neprijetnost\" v nastavitvah za vašo android tipkovnico, kjer izključite možnost avtomatskega dodajanja presledka za piko.</i><br><br><b style>Uporaba iskalnika:</b>&nbsp;geslo in opis sta v iskalniku ločena s presledkom, gesla so vpisana brez presledkov, tudi več besedna, tako kot so vpisana v križankah. Geslo lahko vsebuje tudi pike za neznane črke. V kolikor želite videti vse zadetke, dodate na konec gesla ali opisa znak plus (+). Nekaj primerov iskanja:<br><br>[geslo] - iskanje po geslu (primer: rešeto)<br><br>[geslo opis] - iskanje po geslu in opisu (primer: rešeto sito)<br><br>[ opis] - iskanje po opisu (presledek opis)<br><br>[ge.lo] - iskanje po geslu z neznano črko (uporabimo pike za neznane črke)<br><br>[ge.lo opis] - iskanje po geslu z neznanimi črkami in opisu (primer: re..to sito)<br><br><i><b>Kako zaženemo aplikacijo iz razvojnega okolja <a href=\"https://github.com/trinajstica/OpenXTalk-IDE\" class=\"text-primary\" target=\"_blank\"><b>OpenXTalk</b></a>?</b> Preprosto. Odpakiramo preneseni arhiv OpenXTalk IDE, iz priloženih arhivov v mapi&nbsp;IDE Bundle/Contents/Tools</i>&nbsp;(<i><b>OpenXTalk.exe.zip</b></i> za Windows ali&nbsp;<i><b>OpenXTalk.x86_64.zip</b></i> za Linux) izvlečemo izvržno datoteko in jo poženemo, odpremo <i><b>ua.oxtstack</b></i> aplikacijo in jo zaženemo s klikom v orodni vrstici na gumb <i>Browse Tool</i>. Ostalo pa boste morali odkriti kar sami.</p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "content5-8",
           "_isUserblock": true,
           "_cid": "sNiZop7HsT",
@@ -295,6 +332,43 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "hrColor": "border-color:#000;",
+          "hrShadowColor": "#000",
+          "hrThickness": "border-top-width:3px;",
+          "hrFullWidth": "min-width:0;",
+          "hrWidth": "width:100%;",
+          "hrStyle": "box-shadow: 0 0px 10px 1px black;",
+          "hrPaddingBlock": "padding-bottom:20px; padding-top:20px;",
+          "hrDrawStyle": "min-width:0;width:100%;border-color:#000;box-shadow: 0 0px 10px 1px black;border-top-width:3px;",
+          "_params": {
+            "hrColor": "#000",
+            "bgColor": "#bed3f9",
+            "hrStyleSolid": false,
+            "hrStyleRounded": 3,
+            "hrStyleDotted": false,
+            "hrStyleDashed": false,
+            "hrStyleDouble": false,
+            "hrStyleShadow": true,
+            "hrColorShadow": "#000",
+            "hrThickness": 3,
+            "hrFullWidth": false,
+            "hrWidth": 100,
+            "hrPaddingBlock": 10
+          },
+          "_styles": {
+            "hr": {
+              "margin": "0"
+            }
+          },
+          "alias": "hrblock",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "hrblock-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "hrblock-block-e"
         },
         {
           "alias": false,

@@ -1,6 +1,8 @@
 ZGODOVINA POSODOBITEV APLIKACIJE: UGANKARSKI ASISTENT
 
-v4.1.0.0 - [17.01.2022] - odpravljen hrošč pri iskanju za android, apk in vse arhive
+v4.1.0.0 - [24.01.2022] - adaptivne ikone, posodobljena baza za androide in apk
+
+           [17.01.2022] - odpravljen hrošč pri iskanju za android, apk in vse arhive
 
            [11.01.2022] - posodobljena baza, apk in vsi arhivi
 

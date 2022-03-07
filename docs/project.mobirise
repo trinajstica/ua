@@ -43,12 +43,12 @@
       }
     ],
     "uniqCompNum": 15,
-    "versionPublish": "5.5.8",
+    "versionPublish": "5.6.0",
     "imageResize": true,
     "screenshot": "screenshot.png",
     "witsec-language": "sl",
     "favicon": "@PROJECT_PATH@/assets/images/i96x96-96x96.png",
-    "mbrsiteDomain": "zoslqxd7yg",
+    "mbrsiteDomain": "eg4awwkxni",
     "robotsSwitcher": true,
     "sitemapSwitcher": true,
     "sitemapSwitcherAuto": "on",
@@ -225,39 +225,6 @@
           "_global": false,
           "_once": false,
           "_params": {}
-        },
-        {
-          "_params": {
-            "modalName": "Zaznamek",
-            "modalSize": "medium",
-            "modalHeader": true,
-            "modalTitle": "Novo spletno mesto",
-            "modalBody": "Shranite si (Ctrl+D) naslov novega spletnega mesta Ugankarskega Asistenta.",
-            "modalBodyHTML": false,
-            "modalFooter": true,
-            "modalCloseBtn": true,
-            "modalCloseText": "V redu",
-            "modalLink": false,
-            "modalLinkUrl": "https://trinajstica.github.io/ua",
-            "modalLinkText": "Ugankarski Asistent",
-            "modalLinkNewWindow": true,
-            "modalVerticalCenter": true,
-            "modalFade": true,
-            "modalAutoOpen": true,
-            "modalAutoOpenOnce": true,
-            "modalAutoOpenGDPR": true,
-            "modalAutoOpenDelay": "1"
-          },
-          "modalTest": "<div class=\"mbr-section-btn\">\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#Zaznamek\" data-bs-toggle=\"modal\" data-bs-target=\"#Zaznamek\">Preview Zaznamek</a>\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#Zaznamek-howtouse\" data-bs-toggle=\"modal\" data-bs-target=\"#Zaznamek-howtouse\">How to use Zaznamek</a>\n</div>\n<div class=\"modal fade\" id=\"Zaznamek-howtouse\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"Zaznamek-howtouseLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\" style=\"height:auto\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\" id=\"Zaznamek-howtouseLabel\">How to use?</h5>\n        <a href=\"\" class=\"close\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a>\n      </div>\n      <div class=\"modal-body\">\n        Using your new modal is very easy. Simply create a new link, then click the \"...\" tab and enter the following as custom URL:<br /><br />\n        <code>javascript:OpenModal('Zaznamek')</code>\n      </div>\n      <div class=\"modal-footer\">\n        <div class=\"mbr-section-btn\"><a href=\"#\" class=\"btn btn-secondary display-4\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\">Close</a></div>\n      </div>\n    </div>\n  </div>\n</div>",
-          "modalBody": "Shranite si (Ctrl+D) naslov novega spletnega mesta Ugankarskega Asistenta.",
-          "alias": "witsec-modal-window",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "witsec-modal-window-block",
-          "_sourceTheme": "mobirise5",
-          "_anchor": "witsec-modal-window-block-c",
-          "modalWindow": "<div class=\"modal fade\" id=\"Zaznamek\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ZaznamekLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog  modal-dialog-centered\" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title\" id=\"ZaznamekLabel\">Novo spletno mesto</h5>  <a href=\"#\" class=\"no-anim close\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body\" id=\"Zaznamek_body\">Shranite si (Ctrl+D) naslov novega spletnega mesta Ugankarskega Asistenta.</div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"#\" class=\"no-anim btn btn-secondary display-4\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\">V redu</a></div></div>    </div>  </div></div><script> \ndocument.addEventListener(\"DOMContentLoaded\", function() { \n  if(typeof jQuery === \"function\") {\n    $(\"#Zaznamek\").on(\"hidden.bs.modal\", function () { \n      var html = $( \"#Zaznamek_body\" ).html(); \n      $( \"#Zaznamek_body\" ).empty(); \n      $( \"#Zaznamek_body\" ).append(html); \n    }) \n  } else { \n      var mdw = document.getElementById(\"#Zaznamek\") \n      mdw.addEventListener(\"hidden.bs.modal\", function(event) { \n        mdw.innerHTML = mdw.innerHTML; \n      }); \n  } \n}); \n</script>"
         },
         {
           "alias": false,

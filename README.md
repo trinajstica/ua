@@ -1,6 +1,6 @@
 ## <a href="https://ugankarskiasistent.ga" target="_blank">Ugankarski Asistent v5</a>
 
-Verzija 4 se ne posodablja več, ker je orodje s katerim je bila izdelana popolnoma spremenilo licenco in ga ni več možno uporabljati.
+Verzija 4 se ne posodablja več, ker je orodje s katerim je bila izdelana popolnoma spremenilo licenco in ga ni več možno uporabljati za izdelavo mobilne vezije, OpenXTalk pa je še vedno v razvojnih povojih in tudi izgleda, da bo ostal na tej stopnji še več let. Zato ta sprememba.
 
 ## Ugankarski Asistent v4.0 - izdelano v <a href="https://github.com/OpenXTalk-org">OpenXTalk</a>, Programiranje: <a href="https://barko.ga" target="_blank">barko</a>
 <p style="text-align:center;"><img src="ua.png" alt="Ugankarski Asistent"></p>

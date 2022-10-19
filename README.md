@@ -1,4 +1,4 @@
-## <a href="https://ugankarskiasistent.ga" target="_blank">Ugankarski Asistent v5</a>
+## Prenos nove verzije: <a href="https://ugankarskiasistent.ga" target="_blank">Ugankarski Asistent v5</a>
 
 Verzija 4 se ne posodablja več, ker je orodje s katerim je bila izdelana, popolnoma spremenilo licenco in ga ni več možno uporabljati za izdelavo brezplačne mobilne vezije, OpenXTalk pa je še vedno v razvojnih povojih in tudi izgleda, da bo ostal na tej stopnji še več let ali vsaj nekaj časa. Zato ta sprememba in prehod na novo programersko orodje.
 

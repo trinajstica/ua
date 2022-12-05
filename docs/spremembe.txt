@@ -1,5 +1,8 @@
 ZGODOVINA POSODOBITEV APLIKACIJE: UGANKARSKI ASISTENT
 
+v4.2.0.0 - [05.12.2022] - zagotovoljena kompatibilnost posodobitev z verzijo 5.0 (vse dostopne verzije)
+POZOR: priporočam uporabo verzije 5, saj se orodje s katerim je izdelana v4 ne posodablja oz. njen razvoj je zelo upočasnjen
+
 v4.1.0.0 - [03.08.2022] - posodobljena baza in program v vseh arhivih
 
            [16.02.2022] - odpravljen hrošč pri pošiljanju sprememb v bazi,

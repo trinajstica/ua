@@ -1,0 +1,6 @@
+#!/bin/bash
+# namestitimo javo za naso linux distribucijo
+# prenesemo openjfx in odpakiramo (lib) v mapo, kjer imamo UA5
+# prenos: https://download2.gluonhq.com/openjfx/17.0.14/openjfx-17.0.14_linux-x64_bin-sdk.zip
+java --add-opens javafx.controls/com.sun.javafx.scene.control.skin=ALL-UNNAMED --module-path ./lib --add-modules ALL-MODULE-PATH -jar ua5.jar > /dev/null
+

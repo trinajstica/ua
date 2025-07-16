@@ -53,6 +53,3 @@ Projekt je brezplačen, a lahko prispevaš k njegovemu razvoju s prostovoljnim p
 
 Ta projekt je na voljo pod odprtokodno licenco ([LICENSE](LICENSE)).
 
----
-
-© [Generacija.si](https://ua.generacija.si) – Ugankarski Asistent v5

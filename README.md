@@ -1,2 +1,2 @@
-## Prenos nove verzije: <a href="https://ua.generacija.si" target="_blank">Ugankarski Asistent v5</a>
+## <a href="https://ua.generacija.si" target="_blank">Ugankarski Asistent v5</a>
 

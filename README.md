@@ -1,13 +1,58 @@
-## <a href="https://ua.generacija.si" target="_blank">Ugankarski Asistent v5</a>
+# Ugankarski Asistent v5
 
-Ugankarski pripomoček za pomoč pri reševanju križank in ugank vsebuje veliko število različnih gesel, ki so prosto dostopna na spletu, pridobljena pri reševanju križank in zbrana v podatkovno bazo, ki jo pomagate posodabljati tudi vi!
+**Ugankarski Asistent v5** je brezplačen namizni in mobilni pripomoček za pomoč pri reševanju križank, ugank in sorodnih miselnih nalog.
 
-Aplikacija je brezplačna za uporabo, lahko pa <a href="https://www.paypal.com/donate/?hosted_button_id=4BS9ZUXJ2P7GN">prispevate k razvoju</a>.
+Aplikacija vključuje bogato zbirko gesel in opisov, zbranih iz različnih virov ter prispevkov uporabnikov. Namenjena je slovenskim in angleškim uporabnikom in deluje tudi brez internetne povezave.
 
-Za delovanje ne potrebujete internetne povezave, razen za posodobitve baze in prenos nove verzije programa.
+👉 [Več informacij na uradni spletni strani](https://ua.generacija.si)
 
-Vsebuje angleški in slovenski besednjak s potrebnimi gesli in opisi. Za aktivacijo angleškega slovarja potrebujete operacijski sistem v angleščini ali drugem jeziku, ki ni slovenščina.
+---
 
-Aplikacije ni potrebno nameščati, arhiv razširite na namizje ali drugam in jo poženite iz mape, pred tem pa morate imeti nameščeno <a href="https://www.java.com/en/download/">javo</a>. Android aplikacijo poženete s svojega mobilnega telefona.
+## 🔍 Funkcionalnosti
 
-<a href="https://ua.generacija.si/#prenos">Prenos</a>.
+- Slovenski in angleški besednjak z opisi
+- Hitro iskanje gesel in predlogov
+- Offline delovanje (internet potreben le za posodobitve baze in prenos nove verzije)
+- Brez potrebe po namestitvi (za namizno različico)
+- Podpora za Android naprave
+
+## 💻 Namizna različica
+
+### Zahteve za namizno različico
+
+- [Java Runtime Environment (JRE)](https://www.java.com/en/download/) (priporočena zadnja verzija)
+- Operacijski sistem: Windows, Linux, macOS
+
+### Namestitev
+
+1. Prenesi najnovejšo različico z [https://ua.generacija.si/#prenos](https://ua.generacija.si/#prenos)
+2. Razširi arhiv na želeno lokacijo (npr. namizje)
+3. Zaženi aplikacijo z dvojnim klikom na zagonsko datoteko (`.jar`)
+
+## 📱 Android različica
+
+- Prenesi aplikacijo neposredno iz spletne strani in jo namesti na svojo napravo
+- Aplikacijo zaženi kot vsako drugo Android aplikacijo
+
+## 🌐 Jeziki
+
+- **Slovenščina** – osnovni jezik aplikacije
+- **Angleščina** – samodejno aktivirana, če sistem ni v slovenščini
+
+## 🤝 Prispevaj
+
+Prispevaj gesla ali izboljšave! Če imaš predloge, izboljšave ali gesla, jih lahko deliš prek uradne spletne strani ali GitHub izdaj.
+
+## 💚 Podpri projekt
+
+Projekt je brezplačen, a lahko prispevaš k njegovemu razvoju s prostovoljnim prispevkom:
+
+[Doniraj preko PayPal](https://www.paypal.com/donate/?hosted_button_id=4BS9ZUXJ2P7GN)
+
+## 📄 Licenca
+
+Ta projekt je na voljo pod odprtokodno licenco ([LICENSE](LICENSE)).
+
+---
+
+© [Generacija.si](https://ua.generacija.si) – Ugankarski Asistent v5

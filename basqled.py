@@ -123,6 +123,7 @@ class MainWindow(tk.Tk):
         top.pack(fill='x', padx=5, pady=5)
 
         self.tree = ttk.Treeview(self, columns=(), show='headings')
+        self.tree.bind('<<TreeviewSelect>>', self.on_select_row)
         self.tree.pack(fill='both', expand=True, padx=5)
         self.tree.bind('<Double-1>', self.on_double_click)
 
@@ -179,7 +180,7 @@ class MainWindow(tk.Tk):
         self.sql_button.config(state='normal')
 
     def napolni_sistemsko_sporocilo(self, event):
-        poljubno_besedilo = ("You are a helpful AI assistant. Answer in Slovenian language only. Provide only the final answer. It is important that you do not include any explanation on the steps below. Do not show the intermediate steps information. Enrich the clue '[opis]' based on the answer '[geslo]'. If it refers to a person, verify the birth and death years and write them in the format: ( yyyy - yyyy ) or ( yyyy ). Use factual information from reliable sources (e.g., Wikipedia). Include correct names, titles, companies, and places. Fix any incorrect bracket formatting — use exactly one space after the opening parenthesis, one space before and after the hyphen, and one space before the closing parenthesis. Do not add fictional information. If there is not enough data, return the original clue. Answer ALL CAPITAL LETTERS, in one short sentence. LECTORATE THE ANSWER BEFORE GIVING IT.")
+        poljubno_besedilo = ("You are a helpful AI assistant. Answer in Slovenian language only. Provide only the final answer. It is important that you do not include any explanation on the steps below. Do not show the intermediate steps information. Enrich the clue '[opis]' based on the answer '[geslo]'. If it refers to a person, verify the birth and death years and write them in the format: ( yyyy - yyyy ) or ( yyyy ). Use factual information from reliable sources (e.g., Wikipedia). Include correct names, titles, companies, and places. Fix any incorrect bracket formatting — use exactly one space after the opening parenthesis, one space before and after the hyphen, and one space before the closing parenthesis. Do not add fictional information. If there is not enough data, return the original clue without explenation. Answer ALL CAPITAL LETTERS, in one short sentence. LECTORATE THE ANSWER BEFORE GIVING IT.")
         self.sys_msg.delete('1.0', tk.END)
         self.sys_msg.insert('1.0', poljubno_besedilo)
 
@@ -376,6 +377,9 @@ class MainWindow(tk.Tk):
     def get_row_idx(self):
         f = self.tree.focus()
         return list(self.tree.get_children()).index(f) if f else None
+
+    def on_select_row(self, event):
+        self.last_row = self.get_row_idx()
 
     def save_col_widths(self):
         self.col_widths = {c: self.tree.column(c, width=None) for c in self.columns}
@@ -583,9 +587,18 @@ class MainWindow(tk.Tk):
         try:
             self.conn.execute(f"DELETE FROM {self.db_table} WHERE rowid = ?", (rid,))
             self.conn.commit()
+            
+            old_idx = self.last_row if self.last_row is not None else 0  # Zapomni si staro pozicijo
             self.refresh_table()
+            
+            ch = self.tree.get_children()
+            if ch:
+                # Izberi naslednjo vrstico, če obstaja, sicer prejšnjo
+                next_idx = min(old_idx, len(ch) - 1)
+                self.select_focus(ch[next_idx])
         except sqlite3.Error as e:
             messagebox.showerror("Napaka pri brisanju", str(e))
+
 
     def apply_filter(self):
         ftxt = self.filter_entry.get().strip()

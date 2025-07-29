@@ -6,11 +6,13 @@ import threading
 import tkinter as tk
 import tkinter.font as tkfont
 import requests
+from tenacity import retry, stop_after_attempt, wait_fixed
 
 from tkinter import filedialog, messagebox, ttk
 
 verzija = "0.0.1"
 
+@retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 def call_perplexity(system_msg: str, content: str, api_key: str = None, model: str = None) -> str:
     if not api_key or not model:
         s = load_settings()
@@ -30,11 +32,12 @@ def call_perplexity(system_msg: str, content: str, api_key: str = None, model: s
         "messages": [
             {"role": "system", "content": system_msg},
             {"role": "user",   "content": content}
-        ],        
+        ],
+        "include_citations": False        
     }
 
     try:
-        resp = requests.post(url, headers=headers, json=payload)
+        resp = requests.post(url, headers=headers, json=payload,timeout=10)
         resp.raise_for_status()
         data = resp.json()
         return data["choices"][0]["message"]["content"].strip()
@@ -128,11 +131,7 @@ class MainWindow(tk.Tk):
         self.tree.bind('<Double-1>', self.on_double_click)
 
         nav = tk.Frame(self)
-        for text, cmd in [("⏫ Na vrh", self.jump_top),
-                          ("⏬ Na dno", self.jump_bottom),
-                          ("⬅️ Prejšnji", self.prev_row),
-                          ("➡️ Naslednji", self.next_row),
-                          ("🗑️ Izbriši",  self.delete_row),
+        for text, cmd in [("🗑️ Izbriši",  self.delete_row),
                           ("Izvozi CSV", self.export_csv)]:
             tk.Button(nav, text=text, command=cmd).pack(side='left', padx=2)
         tk.Label(nav, text="Filtriraj:").pack(side='left', padx=5)
@@ -180,7 +179,7 @@ class MainWindow(tk.Tk):
         self.sql_button.config(state='normal')
 
     def napolni_sistemsko_sporocilo(self, event):
-        poljubno_besedilo = ("You are a helpful AI assistant. Answer in Slovenian language only. Provide only the final answer. It is important that you do not include any explanation on the steps below. Do not show the intermediate steps information. Enrich the clue '[opis]' based on the answer '[geslo]'. If it refers to a person, verify the birth and death years and write them in the format: ( yyyy - yyyy ) or ( yyyy ). Use factual information from reliable sources (e.g., Wikipedia). Include correct names, titles, companies, and places. Fix any incorrect bracket formatting — use exactly one space after the opening parenthesis, one space before and after the hyphen, and one space before the closing parenthesis. Do not add fictional information. If there is not enough data, return the original clue without explenation. Answer ALL CAPITAL LETTERS, in one short sentence. LECTORATE THE ANSWER BEFORE GIVING IT.")
+        poljubno_besedilo = ("You are a helpful AI assistant. Answer in Slovenian language only. Provide only the final answer. It is important that you do not include any explanation on the steps below. Do not show the intermediate steps information. Do not include references or citations in the format [1], [2], etc. — they must be completely omitted. Enrich the clue '[opis]' based on the answer '[geslo]'. If it refers to a person, verify the birth and death years and write them in the format: ( yyyy - yyyy ) or ( yyyy ). Use factual information from reliable sources (e.g., Wikipedia). Include correct names, titles, companies, and places. Fix any incorrect bracket formatting — use exactly one space after the opening parenthesis, one space before and after the hyphen, and one space before the closing parenthesis. Do not add fictional information. If there is not enough data, return the original clue without explanation. Answer ALL CAPITAL LETTERS, in one short sentence. LECTORATE THE ANSWER BEFORE GIVING IT.")
         self.sys_msg.delete('1.0', tk.END)
         self.sys_msg.insert('1.0', poljubno_besedilo)
 
@@ -341,32 +340,6 @@ class MainWindow(tk.Tk):
 
         tk.Button(frm, text='Shrani', command=save_edit).pack(side='left', padx=5)
         tk.Button(frm, text='Prekliči', command=dlg.destroy).pack(side='left', padx=5)
-
-    def jump_top(self):
-        ch = self.tree.get_children()
-        if ch:
-            self.select_focus(ch[0])
-
-    def jump_bottom(self):
-        ch = self.tree.get_children()
-        if ch:
-            self.select_focus(ch[-1])
-
-    def prev_row(self):
-        idx = self.get_row_idx()
-        ch = self.tree.get_children()
-        if idx is not None and idx > 0:
-            self.select_focus(ch[idx-1])
-        elif ch:
-            self.select_focus(ch[0])
-
-    def next_row(self):
-        idx = self.get_row_idx()
-        ch = self.tree.get_children()
-        if idx is not None and idx < len(ch)-1:
-            self.select_focus(ch[idx+1])
-        elif ch:
-            self.select_focus(ch[-1])
 
     def select_focus(self, item):
         self.tree.selection_set(item)

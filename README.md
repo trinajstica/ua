@@ -28,12 +28,11 @@ Aplikacija vključuje bogato zbirko gesel in opisov, zbranih iz različnih virov
 ### Namestitev
 
 1. Prenesi najnovejšo različico z [https://ua.generacija.si/#prenos](https://ua.generacija.si/#prenos)
-2. Razširi arhiv na želeno lokacijo (npr. namizje)
-3. Zaženi aplikacijo z dvojnim klikom na zagonsko datoteko (`.jar`)
+2. Zaženi aplikacijo z dvojnim klikom na zagonsko datoteko (`.jar`)
 
 ## 📱 Android različica
 
-- Prenesi aplikacijo neposredno iz spletne strani in jo namesti na svojo napravo
+- Prenesi aplikacijo neposredno iz spletne trgovina play
 - Aplikacijo zaženi kot vsako drugo Android aplikacijo
 
 ## 🌐 Jeziki

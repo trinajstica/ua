@@ -55,6 +55,8 @@ Ta projekt je na voljo pod odprtokodno licenco ([LICENSE](LICENSE)).
 
 # baSQLed – SQLite pomočnik z AI podporo 🇸🇮
 
+![Osnovno okno](./basqled.png)
+
 **[baSQLed](basqled.py)** je namizna aplikacija, napisana v Pythonu z uporabo `tkinter`, ki omogoča enostavno pregledovanje, urejanje in procesiranje SQLite baz podatkov za Ugankarski Asistent. Vgrajena podpora za **Perplexity AI API** omogoča avtomatsko izboljšavo besedil v bazi. Izdelano z uporabo naprednega prompt inženiringa za ChatGPT.
 
 ## 🎯 Glavne funkcije

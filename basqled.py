@@ -125,7 +125,7 @@ class MainWindow(tk.Tk):
         tk.Button(top, text="Osveži", command=self.refresh_table).pack(side='left', padx=5)
         top.pack(fill='x', padx=5, pady=5)
 
-        self.tree = ttk.Treeview(self, columns=(), show='headings')
+        self.tree = ttk.Treeview(self, columns=(), show='headings', selectmode='browse')
         self.tree.bind('<<TreeviewSelect>>', self.on_select_row)
         self.tree.pack(fill='both', expand=True, padx=5)
         self.tree.bind('<Double-1>', self.on_double_click)

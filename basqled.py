@@ -139,6 +139,8 @@ class MainWindow(tk.Tk):
         self.filter_entry.pack(side='left')
         self.filter_entry.bind('<Return>', lambda e: self.apply_filter())
         tk.Button(nav, text="Pojdi", command=self.apply_filter).pack(side='left', padx=2)
+        self.process_button = tk.Button(nav, text="⚙️ Procesiraj", command=self.process)
+        self.process_button.pack(side='left', padx=5)
         nav.pack(fill='x', padx=5, pady=5)
 
         tk.Label(self, text="Trenutna vsebina:").pack(anchor='w', padx=5)
@@ -149,8 +151,6 @@ class MainWindow(tk.Tk):
         self.gpt_response.pack(fill='x', padx=5, pady=2)
 
         bottom = tk.Frame(self)
-        self.process_button = tk.Button(bottom, text="Procesiraj", command=self.process)
-        self.process_button.pack(side='left', padx=5)
         self.sql_button = tk.Button(bottom, text="SQL", command=self.open_sql, state='disabled')
         self.sql_button.pack(side='left', padx=5)
         tk.Button(bottom, text="Pomoč", command=self.open_help).pack(side='right', padx=5)
@@ -441,7 +441,7 @@ class MainWindow(tk.Tk):
             self.potrdi_in_uredi(star_opis, odgovor, shrani_v_bazo)
 
         self.after(0, update_ui)
-        self.process_button.config(state='normal')
+        self.after(0, lambda: self.process_button.config(state='normal'))
 
     def open_db(self):
         p = filedialog.askopenfilename(filetypes=[('SQLite','*.db *.sqlite'),('Vse datoteke','*')])

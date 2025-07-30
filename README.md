@@ -1,5 +1,7 @@
 # Ugankarski Asistent v5
 
+![Osnovno okno](./ua5.png)
+
 **Ugankarski Asistent v5** je brezplačen namizni in mobilni pripomoček za pomoč pri reševanju križank, ugank in sorodnih miselnih nalog.
 
 Aplikacija vključuje bogato zbirko gesel in opisov, zbranih iz različnih virov ter prispevkov uporabnikov. Namenjena je slovenskim in angleškim uporabnikom in deluje tudi brez internetne povezave.

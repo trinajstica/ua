@@ -82,3 +82,4 @@ Ta projekt je na voljo pod odprtokodno licenco ([MIT](LICENSE)), razen aplikacij
 Namesti manjkajoče knjižnice z:
 ```bash
 pip install requests
+pip install tenacity

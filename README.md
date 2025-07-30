@@ -52,7 +52,7 @@ Projekt je brezplačen, a lahko prispevaš k njegovemu razvoju s prostovoljnim p
 
 ## 📄 Licenca
 
-Ta projekt je na voljo pod odprtokodno licenco ([LICENSE](LICENSE)).
+Ta projekt je na voljo pod odprtokodno licenco ([LICENSE](LICENSE)). Aplikacija "ugankarski asistent" ni (še) odprtokodna.
 
 # baSQLed – SQLite pomočnik z AI podporo 🇸🇮
 

@@ -12,6 +12,8 @@ from tkinter import filedialog, messagebox, ttk
 
 verzija = "0.0.1"
 
+DEFAULT_SYSTEM_MSG = ("You are a helpful AI assistant. Answer in Slovenian language only. Provide only the final answer. It is important that you do not include any explanation on the steps below. Do not show the intermediate steps information. Do not include references or citations in the format [1], [2], etc. — they must be completely omitted. Enrich the clue '[opis]' based on the answer '[geslo]'. If it refers to a person, verify the birth and death years and write them in the format: ( yyyy - yyyy ) or ( yyyy ). Use factual information from reliable sources (e.g., Wikipedia). Include correct names, titles, companies, and places. Fix any incorrect bracket formatting — use exactly one space after the opening parenthesis, one space before and after the hyphen, and one space before the closing parenthesis. Do not add fictional information. If there is not enough data, return the original clue without explanation. Answer ALL CAPITAL LETTERS, in one short sentence. LECTORATE THE ANSWER BEFORE GIVING IT.")
+
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 def call_perplexity(system_msg: str, content: str, api_key: str = None, model: str = None) -> str:
     if not api_key or not model:
@@ -21,6 +23,8 @@ def call_perplexity(system_msg: str, content: str, api_key: str = None, model: s
 
     if not api_key:
         return "[Napaka: Perplexity API ključ ni nastavljen.]"
+    if not model:
+        return "[Napaka: Perplexity model ni nastavljen.]"
 
     url = "https://api.perplexity.ai/chat/completions"
     headers = {
@@ -45,12 +49,13 @@ def call_perplexity(system_msg: str, content: str, api_key: str = None, model: s
         return f"[Napaka pri klicu Perplexity API: {e}]"
 
 SETTINGS_FILE = os.path.join(os.getcwd(), 'settings.ini')
+CHANGES_FILE = os.path.join(os.path.dirname(SETTINGS_FILE), 'spremembe.txt')
 
 def load_settings():
     config = configparser.ConfigParser()
     defaults = {
         'api_key': '', 'model': '',
-        'system_msg': '',
+        'system_msg': DEFAULT_SYSTEM_MSG,
         'last_db': '', 'last_row': None, 'col_widths': {},
         'win_width': 850, 'win_height': 650
     }
@@ -61,7 +66,8 @@ def load_settings():
             defaults['model'] = config['Perplexity'].get('model', defaults['model'])
         if 'User' in config:
             u = config['User']
-            defaults['system_msg'] = u.get('system_msg', defaults['system_msg'])
+            v = u.get('system_msg', '').strip()
+            defaults['system_msg'] = v if v else defaults['system_msg']
             defaults['last_db'] = u.get('last_db', defaults['last_db'])
             lr = u.get('last_row','')
             defaults['last_row'] = int(lr) if lr.isdigit() else None
@@ -88,15 +94,18 @@ def save_settings(api_key, model, system_msg,
     if win_width is not None: user['win_width'] = str(win_width)
     if win_height is not None: user['win_height'] = str(win_height)
     config['User'] = user
-    with open(SETTINGS_FILE, 'w') as f:
+    with open(SETTINGS_FILE, 'w', encoding='utf-8') as f:
         config.write(f)
 
 class MainWindow(tk.Tk):
     def __init__(self):
         super().__init__(className='Basqled')
 
-        default_font = tkfont.nametofont("TkDefaultFont")
-        default_font.configure(size=10, family="DejaVu Sans")
+        try:
+            default_font = tkfont.nametofont("TkDefaultFont")
+            default_font.configure(size=10, family="DejaVu Sans")
+        except Exception:
+            pass
 
         s = load_settings()
         self.title(f"baSQLed v{verzija} (C) BArko, 2025+")
@@ -167,7 +176,11 @@ class MainWindow(tk.Tk):
         self.protocol('WM_DELETE_WINDOW', self.on_close)
 
     def init_db(self, path):
-        self.conn = sqlite3.connect(path)
+        try:
+            self.conn = sqlite3.connect(path)
+        except sqlite3.Error as e:
+            messagebox.showerror('Napaka', f'Ne morem odpreti baze: {e}')
+            return
         self.conn.text_factory = lambda b: b.decode('utf-8','replace')
         cursor = self.conn.cursor()
         cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
@@ -179,9 +192,8 @@ class MainWindow(tk.Tk):
         self.sql_button.config(state='normal')
 
     def napolni_sistemsko_sporocilo(self, event):
-        poljubno_besedilo = ("You are a helpful AI assistant. Answer in Slovenian language only. Provide only the final answer. It is important that you do not include any explanation on the steps below. Do not show the intermediate steps information. Do not include references or citations in the format [1], [2], etc. — they must be completely omitted. Enrich the clue '[opis]' based on the answer '[geslo]'. If it refers to a person, verify the birth and death years and write them in the format: ( yyyy - yyyy ) or ( yyyy ). Use factual information from reliable sources (e.g., Wikipedia). Include correct names, titles, companies, and places. Fix any incorrect bracket formatting — use exactly one space after the opening parenthesis, one space before and after the hyphen, and one space before the closing parenthesis. Do not add fictional information. If there is not enough data, return the original clue without explanation. Answer ALL CAPITAL LETTERS, in one short sentence. LECTORATE THE ANSWER BEFORE GIVING IT.")
         self.sys_msg.delete('1.0', tk.END)
-        self.sys_msg.insert('1.0', poljubno_besedilo)
+        self.sys_msg.insert('1.0', DEFAULT_SYSTEM_MSG)
 
 
     def open_sql(self):
@@ -322,12 +334,12 @@ class MainWindow(tk.Tk):
 
         frm = tk.Frame(dlg)
         frm.grid(row=2, column=0, sticky='ew', pady=5)
-        def save_edit():            
+        def save_edit():
             nv = ent.get('1.0', tk.END).rstrip('\n').upper()
             try:
-                idx_geslo = self.columns.index('geslo')
-                geslo = self.full_rows[r_i][idx_geslo]
-                spremembe_path = os.path.join(os.path.dirname(SETTINGS_FILE), 'spremembe.txt')
+                idx_geslo = self.columns.index('geslo') if 'geslo' in self.columns else None
+                geslo = self.full_rows[r_i][idx_geslo] if idx_geslo is not None else ''
+                spremembe_path = CHANGES_FILE
                 with open(spremembe_path, 'a', encoding='utf-8') as f:
                     f.write(f"*\n{geslo}\n{old}\n{nv}\n")
                 self.conn.execute(f"UPDATE {self.db_table} SET {coln}=? WHERE rowid=?", (nv, rid))
@@ -357,22 +369,28 @@ class MainWindow(tk.Tk):
     def save_col_widths(self):
         self.col_widths = {c: self.tree.column(c, width=None) for c in self.columns}
 
+    def save_state(self):
+        """Persist current settings to `settings.ini`."""
+        self.save_col_widths()
+        save_settings(self.api_key, self.model,
+                      self.sys_msg.get('1.0', tk.END).strip(),
+                      self.db_path, self.get_row_idx(), self.col_widths,
+                      self.winfo_width(), self.winfo_height())
+
     def process(self):
         self.process_button.config(state='disabled')
         col = "opis"
         if col not in self.columns:
             messagebox.showerror('Napaka', 'Stolpec "opis" ne obstaja v tabeli.')
+            self.process_button.config(state='normal')
             return
-        self.save_col_widths()
-        save_settings(self.api_key, self.model,
-              self.sys_msg.get('1.0', tk.END).strip(),
-              self.db_path, self.get_row_idx(), self.col_widths,
-              self.winfo_width(), self.winfo_height())
+        self.save_state()
 
         idx = self.columns.index(col)
         row_idx = self.get_row_idx()
         if row_idx is None:
             messagebox.showwarning('Opozorilo', 'Ni izbrane vrstice')
+            self.process_button.config(state='normal')
             return
         row_values = self.tree.item(self.tree.get_children()[row_idx])['values']
         rowid = self.rowids[row_idx]
@@ -382,6 +400,7 @@ class MainWindow(tk.Tk):
             opis = row_values[self.columns.index('opis')]
         except ValueError:
             messagebox.showerror('Napaka', 'Stolpca \"geslo\" in/ali \"opis\" ne obstajata v tabeli.')
+            self.process_button.config(state='normal')
             return
 
         sys_msg = self.sys_msg.get('1.0', tk.END).strip()
@@ -392,28 +411,7 @@ class MainWindow(tk.Tk):
         self.current_content.insert(tk.END, opis)
         self.current_content.config(state='disabled')
 
-        def process_call():
-            odgovor = call_perplexity(sys_msg, prompt, self.api_key, self.model)
-
-            self.gpt_response.config(state='normal')
-            self.gpt_response.delete('1.0', tk.END)
-            self.gpt_response.insert(tk.END, odgovor)
-            self.gpt_response.config(state='disabled')
-
-            ok = messagebox.askyesno("Shrani odgovor", "Ali želiš shraniti spremembo?")
-            if ok:
-                try:
-                    spremembe_path = os.path.join(os.path.dirname(SETTINGS_FILE), 'spremembe.txt')
-                    star_opis = self.current_content.get('1.0', tk.END).strip()
-                    novi_opis = self.gpt_response.get('1.0', tk.END).strip()
-                    with open(spremembe_path, 'a', encoding='utf-8') as f:
-                        f.write(f"*\n{geslo}\n{star_opis}\n{novi_opis}\n")
-                    self.conn.execute(f"UPDATE {self.db_table} SET {col}=? WHERE rowid=?", (odgovor, rowid))
-                    self.conn.commit()
-                    self.last_row = row_idx
-                    self.refresh_table()
-                except sqlite3.Error as e:
-                    messagebox.showerror("Napaka pri shranjevanju", str(e))
+        # removed blocking `process_call` in favor of `_call_and_save` background thread
 
         threading.Thread(target=lambda: self._call_and_save(sys_msg, prompt, rowid, col, row_idx, geslo), daemon=True).start()
 
@@ -423,7 +421,7 @@ class MainWindow(tk.Tk):
 
         def shrani_v_bazo(popravljen_opis):
             try:
-                spremembe_path = os.path.join(os.path.dirname(SETTINGS_FILE), 'spremembe.txt')
+                spremembe_path = CHANGES_FILE
                 with open(spremembe_path, 'a', encoding='utf-8') as f:
                     f.write(f"*\n{geslo}\n{star_opis}\n{popravljen_opis}\n")
                 self.conn.execute(f"UPDATE {self.db_table} SET {col}=? WHERE rowid=?", (popravljen_opis, rowid))
@@ -502,10 +500,7 @@ class MainWindow(tk.Tk):
         def save_conf():
             self.api_key = ke.get().strip()
             self.model = me.get().strip()
-            save_settings(self.api_key, self.model,
-                          self.sys_msg.get('1.0', tk.END).strip(),
-                          self.db_path, self.get_row_idx(), self.col_widths,
-                          self.winfo_width(), self.winfo_height())
+            self.save_state()
             dlg.destroy()
 
         btn_frm = tk.Frame(dlg)
@@ -551,7 +546,7 @@ class MainWindow(tk.Tk):
             messagebox.showerror("Napaka", "Stolpca 'geslo' ali 'opis' ne obstajata!")
             return
 
-        spremembe_path = os.path.join(os.path.dirname(SETTINGS_FILE), 'spremembe.txt')
+        spremembe_path = CHANGES_FILE
         with open(spremembe_path, 'a', encoding='utf-8') as f:
             f.write("-\n")
             f.write(f"{geslo}\n")
@@ -588,10 +583,12 @@ class MainWindow(tk.Tk):
 
     def on_close(self):
         self.save_col_widths()
-        save_settings(self.api_key, self.model,
-              self.sys_msg.get('1.0', tk.END).strip(),
-              self.db_path, self.get_row_idx(), self.col_widths,
-              self.winfo_width(), self.winfo_height())
+        self.save_state()
+        if getattr(self, 'conn', None):
+            try:
+                self.conn.close()
+            except Exception:
+                pass
         self.destroy()
 
     def potrdi_in_uredi(self, star_opis, novi_opis, shrani_callback):

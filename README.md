@@ -1,8 +1,8 @@
-# Ugankarski Asistent v5
+# Ugankarski Asistent v6
 
-![Osnovno okno](./ua5.png)
+![Osnovno okno](./ua6.png)
 
-**Ugankarski Asistent v5** je brezplačen namizni in mobilni pripomoček za pomoč pri reševanju križank, ugank in sorodnih miselnih nalog.
+**Ugankarski Asistent v6** je brezplačen namizni in mobilni pripomoček za pomoč pri reševanju križank, ugank in sorodnih miselnih nalog.
 
 Aplikacija vključuje bogato zbirko gesel in opisov, zbranih iz različnih virov ter prispevkov uporabnikov. Namenjena je slovenskim in angleškim uporabnikom in deluje tudi brez internetne povezave.
 
@@ -22,7 +22,7 @@ Aplikacija vključuje bogato zbirko gesel in opisov, zbranih iz različnih virov
 
 ### Zahteve za namizno različico
 
-- [Java Runtime Environment (JRE)](https://www.java.com/en/download/) (priporočena zadnja verzija)
+- [Java Runtime Environment (JRE)](https://adoptium.net/temurin/releases/) (priporočena zadnja verzija)
 - Operacijski sistem: Windows, Linux, macOS
 
 ### Namestitev
